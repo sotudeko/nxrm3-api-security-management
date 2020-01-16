@@ -1,0 +1,6 @@
+- hosts: nxrm3_controller
+  vars:
+    security_type: role
+  roles:
+    - { role: nxrm3-api-run, nxrm3_security_type: "{{ security_type }}", nxrm3_data: "{{ nxrm3_role }}", nxrm3_api: "{{ nxrm3_role_api }}" }
+      

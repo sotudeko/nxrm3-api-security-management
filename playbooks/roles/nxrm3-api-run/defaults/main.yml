@@ -1,0 +1,46 @@
+---
+# defaults file for nxrm3-api-run
+
+nxrm3_instances:
+    - name: be
+      host: http://localhost
+      port: 8081
+      user: admin
+      passwd: admin123
+    # - name: us
+    #   host: http://localhost
+    #   port: 8082
+    #   user: admin
+    #   passwd: admin123
+
+nxrm3_security_api: service/rest/beta/security
+
+nxrm3_role_api: "{{ nxrm3_security_api }}/roles"
+nxrm3_privilege_repository_api: "{{ nxrm3_security_api }}/privileges/repository-content-selector"
+nxrm3_content_selector_api: "{{ nxrm3_security_api }}/content-selectors"
+
+nxrm3_role:
+  - name: "{{ nxrm3_role_name }}"
+    id: "{{ nxrm3_role_id }}"  
+    description: "{{ nxrm3_role_description }}"
+    privileges: "{{ nxrm3_role_privileges }}"
+    roles: "{{ nxrm3_role_roles }}"
+
+nxrm3_privilege_repository:
+  - name: "{{ nxrm3_privilege_name }}"  
+    description: "{{ nxrm3_privilege_description }}"
+    type: "{{ nxrm3_privilege_type }}"
+    format: "{{ nxrm3_format }}" 
+    content_selector: "{{ nxrm3_privilege_content_selector }}" 
+    repository: "{{ nxrm3_repository }}" 
+    actions: "{{ nxrm3_actions }}"
+       
+nxrm3_delete_role:
+  - name: "{{ nxrm3_role_name }}"
+
+nxrm3_content_selector: 
+  - name: "{{ nxrm3_cs_name }}"
+    description: "{{ nxrm3_cs_name }}"
+    type: 'CSEL'
+    attributes: "{{ nxrm3_cs_attributes }}"
+  

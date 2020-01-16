@@ -1,0 +1,6 @@
+{
+ "script_name":"content_selector_create", 
+ "nxrm3_cs_name":"my-cs-name-33",
+ "nxrm3_cs_attributes":["coordinate.groupId =^ 'com.mycompany.demo'"]
+}
+

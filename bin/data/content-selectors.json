@@ -1,0 +1,27 @@
+    
+  {
+    "result":[  
+        {
+            "name":"my-cs-name-101",
+            "attributes":["coordinate.groupId =^ 'com.mycompany.rfp'"],
+            "type": "CSEL",
+            "description": "my-cs-name-101"
+
+        },
+        {
+            "name":"my-cs-name-102",
+            "attributes":["coordinate.groupId =^ 'com.mycompany.sample'"],
+            "type": "CSEL",
+            "description": "my-cs-name-102"
+
+
+        },
+        {
+            "name":"my-cs-name-103",
+            "attributes":["coordinate.groupId =^ 'com.mycompany.test'"],
+            "type": "CSEL",
+            "description": "my-cs-name-103"
+
+        }
+    ]
+}

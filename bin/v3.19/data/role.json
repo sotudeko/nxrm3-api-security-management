@@ -1,0 +1,13 @@
+{
+  "id": "myid2",
+  "name": "myid2",
+  "description": "myid2 description",
+  "privileges": [
+    "nx-blobstores-all",
+    "nx-component-upload"
+  ],
+  "roles": [
+    "nx-admin",
+    "nx-anonymous"
+  ]
+}

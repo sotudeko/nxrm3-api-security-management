@@ -1,0 +1,5 @@
+- hosts: nxrm3_controller
+  tasks:
+    - include: tasks/run_create_script.yml
+      with_items: "{{ nxrm3_privilege_repository }}"
+      

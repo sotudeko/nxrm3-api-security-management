@@ -1,0 +1,20 @@
+---
+- name: Declaring Groovy script {{ item }}
+  uri:
+    url: "{{ nxrm3_item.host }}:{{ nxrm3_item.port }}/service/rest/v1/script"
+    user: "{{ nxrm3_item.user }}"
+    password: "{{ nxrm3_item.passwd }}"
+    body_format: json
+    method: POST
+    force_basic_auth: yes
+    status_code: 204
+    body:
+      name: "{{ item }}"
+      type: 'groovy'
+      content: "{{ lookup('file', 'groovy/' + item + '.groovy') }}"
+  ignore_errors: true
+  loop: "{{ nxrm3_instances }}"
+  loop_control:
+     loop_var: nxrm3_item
+
+

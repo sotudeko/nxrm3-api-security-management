@@ -1,0 +1,19 @@
+- hosts: nxrm3_controller
+  vars:
+    script_name: content_selector_create
+  tasks:
+    - name: Calling Groovy script {{ script_name }}
+      uri:
+        url: "{{ item[1].host }}:{{ item[1].port }}/service/rest/v1/script/{{ script_name }}/run"
+        user: "{{ item[1].user }}"
+        password: "{{ item[1].passwd }}"
+        headers:
+          Content-Type: "text/plain"
+        method: POST
+        status_code: 200,204
+        force_basic_auth: yes
+        body: "{{ item[0] | to_json }}"
+      with_nested: 
+            - "{{ result }}"
+            - "{{ nxrm3_instances }}"
+          
