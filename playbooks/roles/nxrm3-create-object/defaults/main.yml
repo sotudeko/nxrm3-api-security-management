@@ -1,0 +1,37 @@
+---
+# defaults file for nxrm3-create-object
+
+nxrm3_role:
+  - name: "{{ nxrm3_role_name }}"
+    id: "{{ nxrm3_role_id }}"  
+    description: "{{ nxrm3_role_description }}"
+    privileges: "{{ nxrm3_role_privileges }}"
+    roles: "{{ nxrm3_role_roles }}"
+
+nxrm3_privilege_repository_cs:
+  - name: "{{ nxrm3_privilege_name }}"  
+    description: "{{ nxrm3_privilege_description }}"
+    type: "{{ nxrm3_privilege_type }}"
+    format: "{{ nxrm3_format }}" 
+    content_selector: "{{ nxrm3_privilege_content_selector }}" 
+    repository: "{{ nxrm3_repository }}" 
+    actions: "{{ nxrm3_actions }}"
+       
+nxrm3_delete_role:
+  - name: "{{ nxrm3_role_name }}"
+
+_nxrm3_content_selector: 
+  - name: "{{ nxrm3_cs_name }}"
+    id: "{{ nxrm3_cs_name }}"
+    description: "{{ nxrm3_cs_name }}"
+    type: 'CSEL'
+    attributes: "{{ nxrm3_cs_attributes }}"
+
+nxrm3_content_selector: 
+  - name: "{{ nxrm3_cs_name }}"
+    description: "{{ nxrm3_cs_name }}"
+    type: 'CSEL'
+    expression: "{{ nxrm3_cs_attributes }}"
+        
+      
+  
