@@ -1,0 +1,11 @@
+{
+ "script_name":"privilege_repository_content_selector_create",
+ "nxrm3_privilege_name":"my-priv-cs-3",
+ "nxrm3_privilege_description":"my-priv-cs-3",
+ "nxrm3_privilege_actions":["READ","BROWSE"],
+ "nxrm3_format":"maven2",
+ "nxrm3_privilege_repository":"maven-releases",
+ "nxrm3_privilege_content_selector":"my-cs-name-33"
+}
+
+ 

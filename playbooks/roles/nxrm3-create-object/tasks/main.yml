@@ -9,7 +9,7 @@
     headers:
       Content-Type: "application/json"
     method: POST
-    status_code: 200,204
+    status_code: 200,201,204
     force_basic_auth: yes
     body: "{{ nxrm3_data[0] | to_json }}"
   loop: "{{ nxrm3_instances }}"

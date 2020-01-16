@@ -8,30 +8,24 @@ nxrm3_role:
     privileges: "{{ nxrm3_role_privileges }}"
     roles: "{{ nxrm3_role_roles }}"
 
-nxrm3_privilege_repository_cs:
+nxrm3_privilege_repository_content_selector:
   - name: "{{ nxrm3_privilege_name }}"  
     description: "{{ nxrm3_privilege_description }}"
-    type: "{{ nxrm3_privilege_type }}"
     format: "{{ nxrm3_format }}" 
-    content_selector: "{{ nxrm3_privilege_content_selector }}" 
-    repository: "{{ nxrm3_repository }}" 
-    actions: "{{ nxrm3_actions }}"
+    contentSelector: "{{ nxrm3_privilege_content_selector }}" 
+    repository: "{{ nxrm3_privilege_repository }}" 
+    actions: "{{ nxrm3_privilege_actions }}"
        
-nxrm3_delete_role:
-  - name: "{{ nxrm3_role_name }}"
-
-_nxrm3_content_selector: 
-  - name: "{{ nxrm3_cs_name }}"
-    id: "{{ nxrm3_cs_name }}"
-    description: "{{ nxrm3_cs_name }}"
-    type: 'CSEL'
-    attributes: "{{ nxrm3_cs_attributes }}"
+nxrm3_privilege_repository_view:
+  - name: "{{ nxrm3_privilege_name }}"  
+    description: "{{ nxrm3_privilege_description }}"
+    format: "{{ nxrm3_format }}" 
+    repository: "{{ nxrm3_privilege_repository }}" 
+    actions: "{{ nxrm3_privilege_actions }}"    
 
 nxrm3_content_selector: 
   - name: "{{ nxrm3_cs_name }}"
     description: "{{ nxrm3_cs_name }}"
-    type: 'CSEL'
     expression: "{{ nxrm3_cs_attributes }}"
         
-      
   

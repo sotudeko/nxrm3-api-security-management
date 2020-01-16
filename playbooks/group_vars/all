@@ -3,7 +3,11 @@
 nxrm3_security_api: service/rest/beta/security
 
 nxrm3_role_api: "{{ nxrm3_security_api }}/roles"
-nxrm3_privilege_repository_cs_api: "{{ nxrm3_security_api }}/privileges/repository-content-selector"
+
+nxrm3_privileges_api: "{{ nxrm3_security_api }}/privileges"
+nxrm3_privilege_repository_view_api: "{{ nxrm3_security_api }}/privileges/repository-view"
+nxrm3_privilege_repository_content_selector_api: "{{ nxrm3_security_api }}/privileges/repository-content-selector"
+
 nxrm3_content_selector_api: "{{ nxrm3_security_api }}/content-selectors"
 
 nxrm3_instances:
