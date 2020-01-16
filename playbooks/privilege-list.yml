@@ -1,6 +1,4 @@
 - hosts: nxrm3_controller
-  vars:
-    security_type: privileges
   roles:
-    - { role: nxrm3-list-objects, nxrm3_security_type: "{{ security_type }}", nxrm3_api: "{{ nxrm3_privileges_api }}" }
+    - { role: nxrm3-list-objects, nxrm3_api: "{{ nxrm3_privileges_api }}" }
     
