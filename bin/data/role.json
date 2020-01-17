@@ -1,9 +1,8 @@
 {
- "script_name":"role_create", 
- "nxrm3_role_id":"my-role-XYZ-id", 
- "nxrm3_role_name":"my-role-XYZ-name", 
- "nxrm3_role_description":"my-role-XYZ-name", 
- "nxrm3_role_privileges":["nx-component-upload", "nx-repository-admin-*-*-*", "nx-blobstores-all"], 
- "nxrm3_role_roles":["nx-admin","nx-anonymous"]
+ "nxrm3_id":"my-role-id-1", 
+ "nxrm3_name":"my-role-id-1", 
+ "nxrm3_description":"my-role-id-1 desc", 
+ "nxrm3_privileges":["nx-component-upload", "nx-repository-admin-*-*-*", "nx-blobstores-all"], 
+ "nxrm3_roles":["nx-admin","nx-anonymous"]
 }
-
+ 

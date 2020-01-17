@@ -1,9 +1,8 @@
 {
- "script_name":"privilege_repository_view_create",
- "nxrm3_privilege_name":"my-priv-rv-4",
- "nxrm3_privilege_description":"my-priv-3",
- "nxrm3_privilege_actions":["READ"],
+ "nxrm3_name":"my-priv-rv-5",
+ "nxrm3_description":"my-priv-5",
+ "nxrm3_actions":["READ"],
  "nxrm3_format":"maven2",
- "nxrm3_privilege_repository":"maven-releases"
+ "nxrm3_repository":"maven-releases"
 }
-
+ 

@@ -1,6 +1,6 @@
 {
- "script_name":"content_selector_create", 
- "nxrm3_cs_name":"my-cs-name-33",
- "nxrm3_cs_attributes":"coordinate.groupId =^ 'com.mycompany.demo'"
+ "nxrm3_name":"my-cs-name-44",
+ "nxrm3_description":"my-cs-name-44",
+ "nxrm3_expression":"coordinate.groupId =^ 'com.mycompany.demo'"
 }
 

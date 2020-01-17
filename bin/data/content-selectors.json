@@ -2,26 +2,20 @@
   {
     "result":[  
         {
-            "name":"my-cs-name-101",
-            "attributes":["coordinate.groupId =^ 'com.mycompany.rfp'"],
-            "type": "CSEL",
-            "description": "my-cs-name-101"
-
+            "nxrm3_name":"my-cs-name-101",
+            "nxrm3_description":"my-cs-name-101",
+            "nxrm3_expression":["coordinate.groupId =^ 'com.mycompany.rfp'"]
         },
         {
-            "name":"my-cs-name-102",
-            "attributes":["coordinate.groupId =^ 'com.mycompany.sample'"],
-            "type": "CSEL",
-            "description": "my-cs-name-102"
-
-
+            "nxrm3_name":"my-cs-name-102",
+            "nxrm3_description":"my-cs-name-102",
+            "nxrm3_expression":["coordinate.groupId =^ 'com.mycompany.rfp'"]
         },
         {
-            "name":"my-cs-name-103",
-            "attributes":["coordinate.groupId =^ 'com.mycompany.test'"],
-            "type": "CSEL",
-            "description": "my-cs-name-103"
-
+            "nxrm3_name":"my-cs-name-103",
+            "nxrm3_description":"my-cs-name-103",
+            "nxrm3_expression":["coordinate.groupId =^ 'com.mycompany.rfp'"]
         }
+        
     ]
 }

@@ -1,57 +1,27 @@
 {
     "result":[
-  {
-    "roleId": "my-role-199-id",
-    "roles": [
-      "nx-admin",
-      "nx-anonymous"
-    ],
-    "version": "1",
-    "privileges": [
-      "nx-repository-admin-*-*-*",
-      "nx-component-upload",
-      "nx-blobstores-all"
-    ],
-    "description": "my-role-199-name",
-    "readOnly": false,
-    "source": "default",
-    "name": "my-role-199-name"
-  },
-  {
-    "roleId": "my-role-188-id",
-    "roles": [
-      "nx-admin",
-      "nx-anonymous"
-    ],
-    "version": "1",
-    "privileges": [
-      "nx-repository-admin-*-*-*",
-      "nx-component-upload",
-      "nx-blobstores-all"
-    ],
-    "description": "my-role-188-name",
-    "readOnly": false,
-    "source": "default",
-    "name": "my-role-188-name"
-  },
-  {
-    "roleId": "my-role-177-id",
-    "roles": [
-      "nx-admin",
-      "nx-anonymous"
-    ],
-    "version": "1",
-    "privileges": [
-      "nx-repository-admin-*-*-*",
-      "nx-component-upload",
-      "nx-blobstores-all"
-    ],
-    "description": "my-role-177-name",
-    "readOnly": false,
-    "source": "default",
-    "name": "my-role-177-name"
-  }
-]
+      {
+        "nxrm3_id":"my-role-id-1", 
+        "nxrm3_name":"my-role-id-1", 
+        "nxrm3_description":"my-role-id-1", 
+        "nxrm3_privileges":["nx-component-upload", "nx-repository-admin-*-*-*", "nx-blobstores-all"], 
+        "nxrm3_roles":["nx-admin","nx-anonymous"]
+       },
+       {
+        "nxrm3_id":"my-role-id-2", 
+        "nxrm3_name":"my-role-id-2", 
+        "nxrm3_description":"my-role-id-2 desc", 
+        "nxrm3_privileges":["nx-component-upload", "nx-repository-admin-*-*-*", "nx-blobstores-all"], 
+        "nxrm3_roles":["nx-admin","nx-anonymous"]
+       },
+       {
+        "nxrm3_id":"my-role-id-3", 
+        "nxrm3_name":"my-role-id-3", 
+        "nxrm3_description":"my-role-id-3 desc", 
+        "nxrm3_privileges":["nx-component-upload", "nx-repository-admin-*-*-*", "nx-blobstores-all"], 
+        "nxrm3_roles":["nx-admin","nx-anonymous"]
+       }
+  ]
 }
 
 
