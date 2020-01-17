@@ -1,7 +1,7 @@
 ---
 # tasks file for nxrm3-api-list-items
 
-- name: Calling NXRM3 API 
+- name: Executing "{{ nxrm3_api }}" API
   uri:
     url: "{{ nxrm3_item.host }}:{{ nxrm3_item.port }}/{{ nxrm3_api }}"
     user: "{{ nxrm3_item.user }}"
@@ -19,4 +19,3 @@
 - debug:
     var: op
 
-    

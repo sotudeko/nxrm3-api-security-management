@@ -1,6 +1,6 @@
 - hosts: nxrm3_controller
   roles:
-    - { role: nxrm3-list-objects, nxrm3_api: "{{ nxrm3_role_api }}" }
+    - { role: nxrm3-api-list-items, nxrm3_api: "{{ nxrm3_role_api }}" }
     
 
       
