@@ -1,6 +1,6 @@
 ---      
 - hosts: nxrm3_controller
   roles:
-    - { role: nxrm3-create-object, nxrm3_data: "{{ nxrm3_privilege_repository_content_selector }}", nxrm3_api: "{{ nxrm3_privilege_repository_content_selector_api }}" }
+    - { role: nxrm3-api-create-item, nxrm3_data: "{{ nxrm3_privilege_repository_content_selector }}", nxrm3_api: "{{ nxrm3_privilege_repository_content_selector_api }}" }
         
   

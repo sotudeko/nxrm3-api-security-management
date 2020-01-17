@@ -1,5 +1,5 @@
 ---
 - hosts: nxrm3_controller
   roles:
-    - { role: nxrm3-create-object, nxrm3_data: "{{ nxrm3_role }}", nxrm3_api: "{{ nxrm3_role_api }}" }
+    - { role: nxrm3-api-create-item, nxrm3_data: "{{ nxrm3_role }}", nxrm3_api: "{{ nxrm3_role_api }}" }
       
