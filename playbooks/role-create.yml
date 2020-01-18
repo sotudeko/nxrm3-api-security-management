@@ -1,5 +1,5 @@
 ---
-- hosts: nxrm3_controller
+- hosts: all
   roles:
     - { role: nxrm3-api-create-item, nxrm3_data: "{{ nxrm3_role }}", nxrm3_api: "{{ nxrm3_role_api }}" }
       
