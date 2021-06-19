@@ -1,6 +1,6 @@
 {
- "nxrm3_name":"my-cs-name-44",
- "nxrm3_description":"my-cs-name-44",
- "nxrm3_expression":"coordinate.groupId =^ 'com.mycompany.demo'"
+ "nxrm3_name":"my-cs-name-65",
+ "nxrm3_description":"my-cs-name-65",
+ "nxrm3_expression":"coordinate.groupId =^ 'org.demo'"
 }
 

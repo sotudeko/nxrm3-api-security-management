@@ -1,0 +1,8 @@
+{
+ "nxrm3_name":"my-priv-rv-7",
+ "nxrm3_description":"my-priv-7",
+ "nxrm3_actions":["ALL", "ADD", "BROWSE", "DELETE", "EDIT", "READ"],
+ "nxrm3_format":"maven2",
+ "nxrm3_repository":"maven-releases"
+}
+ 

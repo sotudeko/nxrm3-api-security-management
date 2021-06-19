@@ -1,6 +1,6 @@
 ---
 
-nxrm3_security_api: service/rest/beta/security
+nxrm3_security_api: service/rest/v1/security
 
 nxrm3_role_api: "{{ nxrm3_security_api }}/roles"
 
